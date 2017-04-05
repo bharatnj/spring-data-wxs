@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.data.build</groupId>
+		<artifactId>spring-data-parent</artifactId>
+		<version>2.0.0.M1</version>
+	</parent>
+	<groupId>org.springframework.data</groupId>
+	<artifactId>spring-data-wxs</artifactId>
+	<version>1.0.0</version>
+	<name>Spring Data WXS</name>
+
+	<repositories>
+		<repository>
+			<id>spring-libs-snapshot</id>
+			<url>https://repo.spring.io/libs-snapshot</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-plugins-release</id>
+			<url>http://repo.spring.io/plugins-release</url>
+		</pluginRepository>
+	</pluginRepositories>
+	<dependencies>
+		<dependency>
+			<groupId>${ibm.extremescale.groupId}</groupId>
+			<artifactId>${ibm.extremescale.artifactId}</artifactId>
+			<version>${ibm.extremescale.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-keyvalue</artifactId>
+			<version>${springdata.keyvalue}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot</artifactId>
+			<version>1.4.5.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<version>1.4.5.RELEASE</version>
+		</dependency>
+	</dependencies>
+	<properties>
+		<springdata.keyvalue>1.2.1.RELEASE</springdata.keyvalue>
+		<ibm.extremescale.version>8.6.0.8</ibm.extremescale.version>
+		<ibm.extremescale.groupId>com.ibm</ibm.extremescale.groupId>
+		<ibm.extremescale.artifactId>extremescale-objectgrid</ibm.extremescale.artifactId>
+	</properties>
+</project>
