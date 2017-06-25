@@ -1,1 +1,1 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=org.springframework.boot.autoconfigure.wxs.WXSAutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.springuniverse.boot.autoconfigure.wxs.WXSAutoConfiguration
